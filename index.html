@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid's Counter</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        input{
+            font-size: 200px;
+            border: 5px solid;
+            border-radius: 50px;
+            }
+        button{
+            font-size: 20px;
+            font-style: oblique;
+            background-color: #edf;
+            width: 100px;
+            height: 50px;
+        }</style>
+<body>
+    <main>
+        <h1>Zaid's Counter</h1>
+    <div class= "counter" id="counterTxt">0</div>
+    <div class="button">
+        <button onclick="counterBtn ('-')">Decrease</button>
+        <button onclick="counterBtn()">Reset</button>
+        <button onclick="counterBtn ('+')">increase</button>
+</div>
+</main>
+<script src= "script.js"></script>
+    <script>
+        const counterBtn= (btn) =>{
+            let counter=  parseFloat (counterTxt.textContent);
+             if (btn === "-"){
+                counter -= 1;}
+            else if (btn === "+") {
+            counter += 1;
+        }else {
+            counter = 0;
+        }counterTxt.textContent=counter
+        if (counter < 0) {
+            }
+        else if (counter === 0)  {
+            }else{
+    }
+    } </script>
+</body></html>
